@@ -46,7 +46,7 @@ psw.onchange = verify_password;
 confirm_psw.onkeyup = verify_password;
 
 function redirect() {
-    window.location.href = "./public/index.html";
+    window.location.href = "./public/sign_in.html";
     // document.getElementById("log_in").innerText = "Log Out";
     // sign_in_flag = true;
     // app.sign_in = true;

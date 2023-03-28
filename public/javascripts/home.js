@@ -72,7 +72,7 @@ var app = new Vue({
     },
     methods: {
         link_to_sign_in: function () {
-            window.location.href = "../sign_in.html";
+            window.location.href = "./public/sign_in.html";
             // let have_logged = document.getElementById("user");
             // if (have_logged.style.display ===)
         },
@@ -216,7 +216,7 @@ var app = new Vue({
             xhttp.send();
         },
         link_to_calendar: function () {
-            window.location.href = "../calendar.html";
+            window.location.href = "./public/calendar.html";
         }
     }
 });
