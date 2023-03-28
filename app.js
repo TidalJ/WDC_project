@@ -17,7 +17,7 @@ var dbConnectionPool = mysql.createPool({
 
 var app = express();
 
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
     req.pool = dbConnectionPool;
     next();
 });
@@ -35,6 +35,7 @@ app.use(session({
 }));
 
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(__dirname, { index: "index.html" }));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
